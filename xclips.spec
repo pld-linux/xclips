@@ -44,8 +44,8 @@ rm -rf makefile
 %build
 aclocal
 autoheader
-automake -a -c
 autoconf
+automake -a -c
 
 %configure
 %{__make}
