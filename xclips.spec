@@ -10,6 +10,8 @@ Patch0:		%{name}-automake.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	clips-devel >= 6.2
+BuildRequires:	XFree86
+BuildRequires:	XFree86-devel
 URL:		http://www.ghg.net/clips/CLIPS.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
