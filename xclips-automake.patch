@@ -1,0 +1,89 @@
+diff -urN x-prjct/AUTHORS x-prjct-/AUTHORS
+--- x-prjct/AUTHORS	Thu Jan  1 01:00:00 1970
++++ x-prjct-/AUTHORS	Wed Apr 10 09:39:44 2002
+@@ -0,0 +1 @@
++dummy
+diff -urN x-prjct/ChangeLog x-prjct-/ChangeLog
+--- x-prjct/ChangeLog	Thu Jan  1 01:00:00 1970
++++ x-prjct-/ChangeLog	Wed Apr 10 09:39:49 2002
+@@ -0,0 +1 @@
++foo
+diff -urN x-prjct/Makefile.am x-prjct-/Makefile.am
+--- x-prjct/Makefile.am	Thu Jan  1 01:00:00 1970
++++ x-prjct-/Makefile.am	Wed Apr 10 09:50:21 2002
+@@ -0,0 +1,32 @@
++bin_PROGRAMS = xclips xclips_color
++
++xclips_SOURCES = \
++	xinterface/xclips.c \
++	xinterface/xclips.h \
++	xinterface/xclipstext.c \
++	xinterface/xclipstext.h \
++	xinterface/xedit.c \
++	xinterface/xedit.h \
++	xinterface/xmain.c \
++	xinterface/xmain.h \
++	xinterface/xmenu.c \
++	xinterface/xmenu_exec.c \
++	xinterface/xmenu_exec.h \
++	xinterface/xmenu_file.c \
++	xinterface/xmenu_file.h \
++	xinterface/xmenu.h \
++	xinterface/xmenu_opt.c \
++	xinterface/xmenu_opt.h \
++	xinterface/xmenu_watch.c \
++	xinterface/xmenu_watch.h \
++	xinterface/xmenu_wind.c \
++	xinterface/xmenu_wind.h \
++	xinterface/xsetup.h
++
++xclips_color_SOURCES = \
++	color/color.c \
++	color/colors.h \
++	color/xdefault.h
++
++xclips_LDADD = -lclips $(X_LIBS) -lXaw -lXmu -lXt -lXext -lX11 -lm
++xclips_color_LDADD = $(X_LIBS) -lXaw -lXmu -lXt -lXext -lX11 -lm
+diff -urN x-prjct/NEWS x-prjct-/NEWS
+--- x-prjct/NEWS	Thu Jan  1 01:00:00 1970
++++ x-prjct-/NEWS	Wed Apr 10 09:39:37 2002
+@@ -0,0 +1 @@
++bar
+diff -urN x-prjct/README x-prjct-/README
+--- x-prjct/README	Thu Jan  1 01:00:00 1970
++++ x-prjct-/README	Wed Apr 10 09:39:39 2002
+@@ -0,0 +1 @@
++baz
+diff -urN x-prjct/configure.ac x-prjct-/configure.ac
+--- x-prjct/configure.ac	Thu Jan  1 01:00:00 1970
++++ x-prjct-/configure.ac	Wed Apr 10 09:48:19 2002
+@@ -0,0 +1,29 @@
++# Process this file with autoconf to produce a configure script.
++AC_INIT(xclips, 0.0.0)
++AM_INIT_AUTOMAKE(xclips, 0.0.0)
++AC_CONFIG_SRCDIR([color/xdefault.h])
++AM_CONFIG_HEADER([config.h])
++
++# Checks for programs.
++AC_PROG_CC
++
++# Checks for libraries.
++
++# Checks for header files.
++AC_PATH_XTRA
++AC_HEADER_STDC
++AC_HEADER_DIRENT
++AC_CHECK_HEADERS([errno.h stdlib.h string.h sys/param.h unistd.h])
++
++CFLAGS="$CFLAGS -I/usr/include/clips"
++
++# Checks for typedefs, structures, and compiler characteristics.
++AC_C_CONST
++
++# Checks for library functions.
++AC_FUNC_MALLOC
++AC_FUNC_STAT
++AC_CHECK_FUNCS([getwd strrchr])
++
++AC_CONFIG_FILES([Makefile])
++AC_OUTPUT
