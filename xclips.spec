@@ -44,10 +44,10 @@ Ten pakiet zawiera iksowe miêdzymordzie do CLIPSa.
 rm -rf makefile
 
 %build
-aclocal
-autoheader
+%{__aclocal}
+%{__autoheader}
 %{__autoconf}
-automake -a -c
+%{__automake}
 
 %configure
 %{__make}
