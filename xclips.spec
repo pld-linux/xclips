@@ -6,6 +6,7 @@ Release:	1
 License:	Public Domain (?)
 Group:		Development/Languages
 Source0:	http://www.ghg.net/clips/download/source/x-prjct.tar.Z
+# Source0-md5:	15fa7231e71d45de603b669fc5c8f557
 Patch0:		%{name}-automake.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
