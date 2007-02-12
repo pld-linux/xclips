@@ -1,5 +1,5 @@
 Summary:	X interface to CLIPS
-Summary(pl):	Iksowe mi阣zymordzie do CLIPSa
+Summary(pl.UTF-8):   Iksowe mi臋dzymordzie do CLIPSa
 Name:		xclips
 Version:	20020329
 Release:	1
@@ -28,15 +28,15 @@ government contractors, universities, and many companies.
 
 This package contains X interface to CLIPS.
 
-%description -l pl
-CLIPS jest narz阣ziem do tworzenia i wdra縜nia system體 eksperckich
-zapewniaj眂ym kompletne 秗odowisko do tworzenia system體 eksperckich
-opartych na regu砤ch lub obiektach. CLIPS jest u縴wany przez wielu
-u縴tkownik體 prywatnych i publicznych, tym: NASA i r罂ne ga酬zie
-wojska, biura federalne, kontrahent體 rz眃owych, uniwersytety i wiele
+%description -l pl.UTF-8
+CLIPS jest narz臋dziem do tworzenia i wdra偶ania system贸w eksperckich
+zapewniaj膮cym kompletne 艣rodowisko do tworzenia system贸w eksperckich
+opartych na regu艂ach lub obiektach. CLIPS jest u偶ywany przez wielu
+u偶ytkownik贸w prywatnych i publicznych, tym: NASA i r贸偶ne ga艂臋zie
+wojska, biura federalne, kontrahent贸w rz膮dowych, uniwersytety i wiele
 firm.
 
-Ten pakiet zawiera iksowe mi阣zymordzie do CLIPSa.
+Ten pakiet zawiera iksowe mi臋dzymordzie do CLIPSa.
 
 %prep
 %setup -q -n x-prjct
