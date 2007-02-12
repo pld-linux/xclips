@@ -1,5 +1,5 @@
 Summary:	X interface to CLIPS
-Summary(pl.UTF-8):   Iksowe międzymordzie do CLIPSa
+Summary(pl.UTF-8):	Iksowe międzymordzie do CLIPSa
 Name:		xclips
 Version:	20020329
 Release:	1
