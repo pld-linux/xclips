@@ -1,22 +1,24 @@
 Summary:	X interface to CLIPS
 Summary(pl.UTF-8):	Iksowe międzymordzie do CLIPSa
 Name:		xclips
-Version:	20020329
+Version:	2.01
 Release:	1
+Epoch:		1
 License:	Public Domain (?)
 Group:		Development/Languages
 Source0:	http://www.ghg.net/clips/download/source/x-prjct.tar.Z
-# Source0-md5:	15fa7231e71d45de603b669fc5c8f557
+# Source0-md5:	1bb0d0e684742188b8c14912c26f12cb
 Patch0:		%{name}-automake.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	clips-devel >= 6.2
-BuildRequires:	XFree86
-BuildRequires:	XFree86-devel
+BuildRequires:	clips-devel >= 6.24
+BuildRequires:	xorg-lib-libXaw-devel
+BuildRequires:	xorg-lib-libXmu-devel
+BuildRequires:	xorg-lib-libXt-devel
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libX11-devel
 URL:		http://www.ghg.net/clips/CLIPS.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
 
 %description
 CLIPS is a productive development and delivery expert system tool
@@ -63,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/xclips
+%attr(755,root,root) %{_bindir}/xclips*
