@@ -2,7 +2,7 @@ Summary:	X interface to CLIPS
 Summary(pl.UTF-8):	Iksowe międzymordzie do CLIPSa
 Name:		xclips
 Version:	2.01
-Release:	1
+Release:	2
 Epoch:		1
 License:	Public Domain (?)
 Group:		Development/Languages
